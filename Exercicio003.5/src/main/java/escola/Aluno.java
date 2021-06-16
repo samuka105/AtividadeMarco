@@ -5,12 +5,13 @@ public class Aluno extends Pessoa{
     private float Nota1;
     private float Nota2;
     private float media;
-    private string matricula;
+    private String matricula;
 
-    public Aluno(float nota1, float nota2, string matricula) {
+    public Aluno(String nome, float nota1, float nota2, String matricula) {
+        super(nome);
         Nota1 = nota1;
         Nota2 = nota2;
-        media = (nota1 + nota2)/2;
+        this.media = (nota1 + nota2)/2;
         this.matricula = matricula;
     }
 
@@ -22,7 +23,7 @@ public class Aluno extends Pessoa{
         return Nota2;
     }
 
-    public string getMatricula() {
+    public String getMatricula() {
         return matricula;
     }
 
@@ -34,9 +35,11 @@ public class Aluno extends Pessoa{
         Nota2 = nota2;
     }
 
-    public void setMatricula(string matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
-
+    public float getMedia() {
+        return media;
+    }
 }

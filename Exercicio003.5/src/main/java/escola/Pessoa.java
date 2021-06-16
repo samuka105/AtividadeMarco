@@ -1,17 +1,17 @@
 package escola;
 
 public class Pessoa {
-    private string nome;
+    private String nome;
 
-    public Pessoa(string nome) {
+    public Pessoa(String nome) {
         this.nome = nome;
     }
 
-    public string getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(string nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 }

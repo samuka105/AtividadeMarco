@@ -2,22 +2,29 @@ package escola;
 
 public class Professor extends Pessoa{
 
-    private string titulacao;
+    private String titulacao;
 
-    public Professor(string titulacao) {
+    public Professor(String nome, String titulacao) {
+        super(nome);
         this.titulacao = titulacao;
     }
 
-    public string getTitulacao() {
+    public Professor(String titulacao) {
+        this.titulacao = titulacao;
+    }
+
+    public String getTitulacao() {
         return titulacao;
     }
 
-    public void setTitulacao(string titulacao) {
+    public void setTitulacao(String titulacao) {
         this.titulacao = titulacao;
     }
 
     public void imprimeProfessor()
     {
-        System.out.println()
+        System.out.println("Imprime professor");
+        System.out.println(getNome());
+        System.out.println(getTitulacao());
     }
 }
